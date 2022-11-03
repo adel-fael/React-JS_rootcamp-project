@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #9FD0D2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+li {
+  /* min-width: 130px; */
+  /* height: 40px; */
+  color: rgb(0 0 0/ .5);
+  padding: 5px 15px;
+  cursor:  default;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* child 1 */
+li:nth-child(1):hover {
+  color:#036C72;
+}
+li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.4s ease;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(242 242 242/ .5);
+}
+li:nth-child(1):hover::after {
+  width: 100%;
+}
+li:nth-child(1)::before {
+  content: '';
+  width: 7px;
+  height: 46px;
+  top: 0px;
+  right: 0px;
+  background-color: transparent;
+  position: absolute;
+  transition: background-color .5s ease-in-out;
+}
+li:nth-child(1):hover::before {
+  background-color: #036C72;
+}
+
+/* child 2 */
+li:nth-child(2):hover {
+  color:#F24141;
+}
+li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.4s ease;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(242 242 242/ .5);
+}
+li:nth-child(2):hover::after {
+  width: 100%;
+}
+li:nth-child(2)::before {
+  content: '';
+  width: 7px;
+  height: 46px;
+  top: 0px;
+  right: 0px;
+  background-color: transparent;
+  position: absolute;
+  transition: background-color .5s ease-in-out;
+}
+li:nth-child(2):hover::before {
+  background-color: #F24141;
+}
+
+/* child 3 */
+li:nth-child(3):hover {
+  color:#4957A6;
+}
+li:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.4s ease;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(242 242 242/ .5);
+}
+li:nth-child(3):hover::after {
+  width: 100%;
+}
+li:nth-child(3)::before {
+  content: '';
+  width: 7px;
+  height: 46px;
+  top: 0px;
+  right: 0px;
+  background-color: transparent;
+  position: absolute;
+  transition: background-color .5s ease-in-out;
+}
+li:nth-child(3):hover::before {
+  background-color: #4957A6;
+}
+
+/* child 4 */
+li:nth-child(4):hover {
+  color:#E7B14E;
+}
+li:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.4s ease;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(242 242 242/ .5);
+}
+li:nth-child(4):hover::after {
+  width: 100%;
+}
+li:nth-child(4)::before {
+  content: '';
+  width: 7px;
+  height: 46px;
+  top: 0px;
+  right: 0px;
+  background-color: transparent;
+  position: absolute;
+  transition: background-color .5s ease-in-out;
+}
+li:nth-child(4):hover::before {
+  background-color: #E7B14E;
+}
+
+/* child 5 */
+li:nth-child(5):hover {
+  color:grey;
+}
+li:nth-child(5)::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.4s ease;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(242 242 242/ .5);
+}
+li:nth-child(5):hover::after {
+  width: 100%;
+}
+li:nth-child(5)::before {
+  content: '';
+  width: 7px;
+  height: 46px;
+  top: 0px;
+  right: 0px;
+  background-color: transparent;
+  position: absolute;
+  transition: background-color .5s ease-in-out;
+}
+li:nth-child(5):hover::before {
+  background-color: grey;
+}
+
+/* child 6 */
+li:nth-child(6):hover {
+  color:black;
+}
+li:nth-child(6)::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.4s ease;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(242 242 242/ .5);
+}
+li:nth-child(6):hover::after {
+  width: 100%;
+}
+li:nth-child(6)::before {
+  content: '';
+  width: 7px;
+  height: 46px;
+  top: 0px;
+  right: 0px;
+  background-color: transparent;
+  position: absolute;
+  transition: background-color .5s ease-in-out;
+}
+li:nth-child(6):hover::before {
+  background-color: black;
+}
+
+
+@media (max-width:280px) {
+  h1 {
+    padding-left: 1rem;
+  }
+  li:nth-child(6)::before {
+    height: 85px;
+  }
+  li:nth-child(3)::before {
+    height: 85px;
+  }
+}
+
+@media (max-width:320px) {
+  h1 {
+    padding-left: 1rem;
+  }
+  li:nth-child(6)::before {
+    height: 85px;
+  }
+  li:nth-child(3)::before {
+    height: 85px;
+  }
+}
+
+.customZindex {
+  z-index: -20;
+}
+
+ul {
+  direction: rtl;
+}
