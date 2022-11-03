@@ -10,4 +10,4 @@ Live URL: [https://rootcamp.netlify.app/](https://rootcamp.netlify.app/)
 
 ### single slide page
 
-![https://rootcamp.netlify.app/](./RootcampImg.png)
+![https://rootcamp.netlify.app/](./rootcamp.png)
