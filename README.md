@@ -1,6 +1,6 @@
 # React-JS_rootcamp-project
 
-Live URL: 
+Live URL: [https://rootcamp.netlify.app/](https://rootcamp.netlify.app/)
 
 ## Built with
 - [React JS 18](https://beta.reactjs.org/)
@@ -10,3 +10,4 @@ Live URL:
 
 ### single slide page
 
+![./RootcampImg.png](https://rootcamp.netlify.app/)
