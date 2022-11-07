@@ -83,7 +83,7 @@ export default function LoginForm() {
           Login
         </LoadingButton>
 
-        <div className="mt-[2rem] space-y-4 absolute ">
+        <div className="mt-[1rem] space-y-4 absolute ">
           <p className="text-red-700 text-sm">{errors?.username?.message}</p>
           <p className="text-red-700 text-sm">{errors?.password?.message}</p>
         </div>
