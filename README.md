@@ -7,6 +7,9 @@ Live URL: [https://rootcamp.netlify.app/](https://rootcamp.netlify.app/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [react-hook-form](https://react-hook-form.com/)
 - [Framer Motion](https://www.framer.com/motion/)
+- [Material UI X Grid](https://mui.com/x/introduction/)
+
+[https://rootcamp.netlify.app/admin] to login 
 
 ### single slide page
 
