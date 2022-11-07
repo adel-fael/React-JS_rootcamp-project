@@ -45,13 +45,13 @@ export default function LoginForm() {
           <TextField
             {...register('username', { required: 'username is required❗' })}
             name="username"
-            label="username"
+            label="slimShady"
             variant="filled"
           />
           <TextField
             {...register('password', { required: 'password is required❗' })}
             name="password"
-            label="Password"
+            label="12345"
             variant="filled"
             type={showPassword ? 'text' : 'password'}
             InputProps={{
