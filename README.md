@@ -9,7 +9,7 @@ Live URL: [https://rootcamp.netlify.app/](https://rootcamp.netlify.app/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Material UI X Grid](https://mui.com/x/introduction/)
 
-[https://rootcamp.netlify.app/admin] to login 
+rootcamp.netlify.app/admin to get into the dashboard
 
 ### single slide page
 
