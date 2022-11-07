@@ -1,5 +1,4 @@
 import { yupResolver } from '@hookform/resolvers/yup'
-import { nanoid } from 'nanoid'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import Swal from 'sweetalert2'
@@ -21,10 +20,7 @@ const schema = yup.object().shape({
 })
 
 const SignUp = () => {
-  const [userInfo, setUserInfo] = useState( [
-
-  ]
-  )
+  const [userInfo, setUserInfo] = useState([])
   console.log(userInfo)
 
   const {
@@ -46,10 +42,11 @@ const SignUp = () => {
     setUserInfo((prevData) => {
       return [
         ...prevData,
-        { id:  userInfo?.length ? userInfo[userInfo.length - 1].id + 1 : 1,
+        {
+          id: userInfo?.length ? userInfo[userInfo.length - 1].id + 1 : 1,
 
-          name: data.name, 
-          email: data.email 
+          name: data.name,
+          email: data.email,
         },
       ]
     })
@@ -59,9 +56,9 @@ const SignUp = () => {
       Swal.fire({
         icon: 'info',
         title: `Too late! ${data.name}`,
-        text: 'Sorry... The event is over, you can know about us down below.',
+        text: 'Sorry... The event is over.',
         footer:
-          'Check our <a class="text-blue-600 underline hover:text-blue200 px-2" target="_blank" href="https://www.linkedin.com/company/econcepts-me/">LinkedIn</a> page.',
+          'Visit our <a class="text-blue-600 underline hover:text-blue200 px-2" target="_blank" href="https://www.linkedin.com/company/econcepts-me/">LinkedIn</a> page.',
       })
     }
   }
@@ -72,7 +69,6 @@ const SignUp = () => {
       setValue('email', '')
     }
   }, [formState])
-
 
   // framer-motion + react-intersection-observer
   const { ref: signUpRef, inView: signUpIsVisible } = useInView({
@@ -110,8 +106,10 @@ const SignUp = () => {
           className="flex flex-col justify-center items-center gap-4 lg:px-[4rem]"
           onSubmit={handleSubmit(onSubmit)}
         >
-          <h2 className="text-[2rem] text-blue200 font-bold line-through">Get Notified!</h2>
-          <p className='line-through'>December 3rd - 4rth</p>
+          <h2 className="text-[2rem] text-blue200 font-bold line-through">
+            Get Notified!
+          </h2>
+          <p className="line-through">December 3rd - 4rth</p>
           <input
             {...register('name')}
             type="text"

@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "tony",
+    "email": "tony@stark.com"
+  },
+  {
+    "id": 2,
+    "name": "snoop",
+    "email": "snoop@dogg.com"
+  },
+  {
+    "id": 3,
+    "name": "kevin",
+    "email": "kevin@hart.com"
+  },
+  {
+    "id": 4,
+    "name": "dwayne",
+    "email": "dwayne@johnson.com"
+  },
+  {
+    "id": 5,
+    "name": "elon",
+    "email": "elon@musk.com"
+  },
+  {
+    "id": 6,
+    "name": "steve",
+    "email": "steve@rogers.com"
+  },
+  {
+    "id": 7,
+    "name": "jewelz",
+    "email": "jewelz@blu.com"
+  },
+  {
+    "id": 8,
+    "name": "bruce",
+    "email": "bruce@wayne.com"
+  },
+  {
+    "id": 9,
+    "name": "pac",
+    "email": "pac@man.com"
+  },
+  {
+    "id": 10,
+    "name": "dead",
+    "email": "dead@pool.com"
+  },
+  {
+    "id": 11,
+    "name": "sponge",
+    "email": "sponge@bob.com"
+  }
+]
