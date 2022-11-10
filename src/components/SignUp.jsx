@@ -7,6 +7,7 @@ import * as yup from 'yup'
 import { motion, useAnimation } from 'framer-motion'
 
 import { useInView } from 'react-intersection-observer'
+import { Link } from 'react-router-dom'
 
 const schema = yup.object().shape({
   name: yup
@@ -107,8 +108,8 @@ const SignUp = () => {
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className="text-center">
-            <h2 className="text-[2rem] text-red100 font-bold">Get Notified!</h2>
-            <p>December 3rd - 4rth</p>
+            <h2 className="text-[2rem] text-red100 font-bold line-through">Get Notified!</h2>
+            <p className='line-through'>December 3rd - 4rth</p>
           </div>
 
           <input
@@ -183,9 +184,10 @@ const SignUp = () => {
               </span>
             </a>
           </div>
-          <span className="text-[.7rem] text-center italic text-gray-700 opacity-[0.6] font-semibold">
+          
+          <Link to='/admin' className="text-[.7rem] text-center italic text-gray-700 opacity-[0.6] font-semibold hover:text-blue-800">
             &#169; 2022 ECONCEPTS - Middle East. <br /> All Rights Reserved.
-          </span>
+          </Link>
         </form>
       </motion.section>
     </div>
