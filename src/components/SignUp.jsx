@@ -140,7 +140,7 @@ const SignUp = () => {
             <span className="relative">Submit</span>
           </button>
 
-          <div className="py-5 space-y-2">
+          <div className="py-5 space-y-2 -mt-3">
             <a
               href="https://www.instagram.com/rootcamp.me/"
               target="_blank"
@@ -185,7 +185,7 @@ const SignUp = () => {
             </a>
           </div>
           
-          <span className="text-[.7rem] text-center italic text-gray-700 opacity-[0.6] font-semibold ">
+          <span className="-mt-4 -mb-3 text-[.7rem] text-center italic text-gray-700 opacity-[0.6] font-semibold ">
             &#169; 2022 ECONCEPTS - Middle East. <br /> All Rights Reserved.
           <Link to='/admin' className="hover:text-blue-800 ml-1 not-italic text-[.8rem]">
            admin page
