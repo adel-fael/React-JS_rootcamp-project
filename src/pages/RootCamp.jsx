@@ -4,6 +4,7 @@ import { AnimatePresence, motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 
+// for the animation
 const animation222 = {
   initial: { y: '50vh' },
   animate: { y: 0 },
@@ -24,8 +25,8 @@ const topicItems = {
   animate: { x: 0 },
 }
 
-function RootCamp() {
-  // framer-motion + react-intersection-observer
+const Rootcamp = () => {
+  // for the framer-motion + react-intersection-observer
   const { ref: svg1Ref, inView: svg1UpIsVisible } = useInView()
   const animation2 = useAnimation()
 
@@ -68,8 +69,9 @@ function RootCamp() {
   }, [svg1UpIsVisible, svg11UpIsVisible])
 
   return (
+
     <AnimatePresence>
-      <main className="overflow-x-hidden">
+      <main className="overflow-x-hidden ">
         <motion.div
           variants={animation3}
           initial="initial"
@@ -81,15 +83,15 @@ function RootCamp() {
           <img className="w-[250px] p-2 mt-8" src="./rootcamplogo.svg" alt="" />
         </motion.div>
 
-        <section className="lg:flex flex-row-reverse justify-center md:gap-[10rem] lg2:gap-[22rem]">
-          <article className="flex flex-col items-center mt-[4rem]  ">
+        <section className="lg:flex flex-row-reverse justify-center md:gap-[10rem] xl:gap-[20rem]">
+          <article className="flex flex-col items-center mt-[4rem]  tall:mt-[0.5rem]">
             <motion.h1
               variants={titleAnimation}
               initial="initial"
               animate="animate"
               exit="exit"
               transition={{ duration: 0.6 }}
-              className="font-bold text-[2rem] text-white200"
+              className="font-bold text-[2rem] md:text-[3rem] text-white200 text-center md:text-right drop-shadow-md"
             >
               Think Deep Act Smart.
             </motion.h1>
@@ -175,7 +177,7 @@ function RootCamp() {
           animate="animate"
           exit="exit"
           transition={{ ease: 'easeIn', duration: 0.6 }}
-          className="hidden customZindex lg:block lg:absolute lg:bottom-0 lg:mx-auto lg:right-0 lg:left-0 lg:w-[50rem]"
+          className="hidden customZindex lg:block lg:absolute lg:bottom-0 lg:mx-auto lg:right-0 lg:left-0 lg:w-[50rem] lg:mb-0 lg:pb-0 "
         >
           <svg
             width="812"
@@ -525,7 +527,8 @@ function RootCamp() {
         </div>
       </main>
     </AnimatePresence>
+    
   )
 }
 
-export default RootCamp
+export default Rootcamp
