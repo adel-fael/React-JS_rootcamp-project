@@ -21,7 +21,7 @@ const schema = yup.object().shape({
 
 const SignUp = () => {
   const [userInfo, setUserInfo] = useState([])
-  console.log(userInfo)
+  // console.log(userInfo)
 
   const {
     register,
@@ -100,16 +100,17 @@ const SignUp = () => {
     <div ref={signUpRef}>
       <motion.section
         animate={animation1}
-        className="mt-[5rem] py-[2rem] flex justify-center bg-yellow200 max-w-[22rem] mx-auto rounded-xl mb-[3rem] lg:max-w-[30rem] z-50"
+        className="mt-[5rem] py-[2rem] flex justify-center bg-yellow200 max-w-[17rem] mx-auto rounded-xl mb-[3rem] md:max-w-[20rem] lg:max-w-[25rem] z-50  tall:mt-[0.5rem] "
       >
         <form
-          className="flex flex-col justify-center items-center gap-4 lg:px-[4rem]"
+          className="flex flex-col justify-around items-center gap-4 lg:px-[4rem]"
           onSubmit={handleSubmit(onSubmit)}
         >
-          <h2 className="text-[2rem] text-blue200 font-bold line-through">
-            Get Notified!
-          </h2>
-          <p className="line-through">December 3rd - 4rth</p>
+          <div className="text-center">
+            <h2 className="text-[2rem] text-red100 font-bold">Get Notified!</h2>
+            <p>December 3rd - 4rth</p>
+          </div>
+
           <input
             {...register('name')}
             type="text"
@@ -117,7 +118,7 @@ const SignUp = () => {
             placeholder="name"
             className="w-full py-4 px-5 bg-white100 placeholder:font-medium rounded-2xl  focus:bg-white200 outline-0 hover:bg-white200 transition-colors text-base"
           />
-          <p className="text-red100 self-start ml-5 text-sm font-bold">
+          <p className="text-red100 self-start ml-5 text-sm font-bold -mt-2">
             {errors?.name?.message}
           </p>
           <input
@@ -127,7 +128,7 @@ const SignUp = () => {
             placeholder="email"
             className="w-full py-4 px-5 bg-white100 placeholder:font-medium rounded-2xl  focus:bg-white200 outline-0 hover:bg-white200 transition-colors text-base"
           />
-          <p className="text-red100 self-start ml-5 text-sm font-bold">
+          <p className="text-red100 self-start ml-5 text-sm font-bold -mt-2">
             {errors?.email?.message}
           </p>
           <button
@@ -135,10 +136,15 @@ const SignUp = () => {
             className="w-full rounded-2xl relative  px-5 py-2.5 overflow-hidden group bg-blue200 hover:bg-gradient-to-r hover:from-blue200 hover:to-blue-600 text-white   hover:ring-blue-400 transition-all ease-out duration-300"
           >
             <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-64 ease"></span>
-            <span className="relative">Button Text</span>
+            <span className="relative">Submit</span>
           </button>
-          <div className="py-5 space-y-4">
-            <a href="#" className=" flex gap-1 active:opacity-[0.6]">
+
+          <div className="py-5 space-y-2">
+            <a
+              href="https://www.instagram.com/rootcamp.me/"
+              target="_blank"
+              className=" flex gap-1 active:opacity-[0.6]"
+            >
               <svg
                 width="24px"
                 height="24px"
@@ -154,8 +160,8 @@ const SignUp = () => {
               </span>
             </a>
             <a
-              href="#"
-              // target="_blank"
+              href="mailto:info@rootcamp.me"
+              target="_blank"
               className="flex gap-1 active:opacity-[0.6]"
             >
               <svg
@@ -177,6 +183,9 @@ const SignUp = () => {
               </span>
             </a>
           </div>
+          <span className="text-[.7rem] text-center italic text-gray-700 opacity-[0.6] font-semibold">
+            &#169; 2022 ECONCEPTS - Middle East. <br /> All Rights Reserved.
+          </span>
         </form>
       </motion.section>
     </div>
