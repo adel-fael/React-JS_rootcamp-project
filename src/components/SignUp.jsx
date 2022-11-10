@@ -185,9 +185,12 @@ const SignUp = () => {
             </a>
           </div>
           
-          <Link to='/admin' className="text-[.7rem] text-center italic text-gray-700 opacity-[0.6] font-semibold hover:text-blue-800">
+          <span className="text-[.7rem] text-center italic text-gray-700 opacity-[0.6] font-semibold ">
             &#169; 2022 ECONCEPTS - Middle East. <br /> All Rights Reserved.
+          <Link to='/admin' className="hover:text-blue-800 ml-1 not-italic text-[.8rem]">
+           admin page
           </Link>
+          </span>
         </form>
       </motion.section>
     </div>
